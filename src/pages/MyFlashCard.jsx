@@ -9,7 +9,7 @@ export default function MyFlashCard() {
   const [seeAll, setSeeAll] = useState(false);
 
   // Manage the number of cards to be displayed.
-  const displayedCards = seeAll ? myCards : myCards.slice(0, 6);
+  const displayedCards = seeAll ? myCards : myCards.slice(0, 8);
 
   return (
     <div className="w-[90vw] sm:w-[80vw] mx-auto mt-3">
