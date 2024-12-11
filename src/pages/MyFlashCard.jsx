@@ -56,7 +56,7 @@ export default function MyFlashCard() {
           </li>
         ))}
       </ul>
-      {myCards.length > 6 && (
+      {myCards.length > 8 && (
         <div className="flex justify-end mt-4">
           <button
             onClick={() => setSeeAll(!seeAll)}
