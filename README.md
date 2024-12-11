@@ -87,9 +87,7 @@ We extend our gratitude to the open-source community and the contributors of the
 ## Contact
 If you have any questions or inquiries, you can reach me at:
 
-- **Email**:: [Prashant Tripathi](prashanttripathi1310@gmail.com)
-- **GitHub**: [Prashant Tripathi](https://github.com/5138prash)
-- **Instagram**: [Prashant Tripathi](https://www.instagram.com/prsanttripathi/)
+- **Email**: [Prashant Tripathi](prashanttripathi1310@gmail.com) | - **GitHub**: [Prashant Tripathi](https://github.com/5138prash) |- **Instagram**: [Prashant Tripathi](https://www.instagram.com/prsanttripathi/)
 
 ---
 
