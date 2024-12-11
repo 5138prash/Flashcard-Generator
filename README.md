@@ -37,11 +37,11 @@ Flashcard Generator includes the following key features:
 ## Tech Stack
 Flashcard Generator is built using modern technologies to ensure high performance and scalability:
 
-- **React + Vite**: For a seamless and reactive user interface.
-- **Tailwind CSS**: Utility-first CSS framework for rapid and modern UI development.
-- **Redux Toolkit**: For efficient and predictable state management.
-- **Formik**: Simplifies form handling and validation.
-- **React Icons**: Offers a vast collection of popular icons to enhance the UI.
+- **React + Vite**: For a seamless and reactive user interface [React + Vite](https://vite.dev/).
+- **Tailwind CSS**: Utility-first CSS framework for rapid and modern UI development [Tailwind CSS](https://tailwindcss.com/).
+- **Redux Toolkit**: For efficient and predictable state management [Redux-Toolkit](https://redux-toolkit.js.org/introduction/getting-started).
+- **Formik**: Simplifies form handling and validation [Formik](https://formik.org/docs/overview).
+- **React Icons**: Offers a vast collection of popular icons to enhance the UI [React Icons](https://react-icons.github.io/react-icons/).
 
 ---
 
@@ -60,16 +60,16 @@ To clone and run this application locally, ensure you have Git and Node.js (with
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/divya247452/flashcard-generator
+$ git clone https://github.com/5138prash/Flashcard-Generator
 
 # Navigate into the repository
-$ cd flashcard-generator
+$ cd Flashcard-Generator
 
 # Install dependencies
 $ npm install
 
 # Start the development server
-$ npm start
+$ npm run dev
 ```
 
 ---
@@ -87,8 +87,9 @@ We extend our gratitude to the open-source community and the contributors of the
 ## Contact
 If you have any questions or inquiries, you can reach me at:
 
-- **Email**: prashant.tripathi@example.com
-- **GitHub**: [github.com/divya247452](https://github.com/divya247452)
+- **Email**:: [Prashant Tripathi](prashanttripathi1310@gmail.com)
+- **GitHub**: [Prashant Tripathi](https://github.com/5138prash)
+- **Instagram**: [Prashant Tripathi](https://www.instagram.com/prsanttripathi/)
 
 ---
 
