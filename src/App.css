@@ -1,0 +1,68 @@
+.active{
+  border-bottom: 4px solid #cc1313;
+  color: #cc1313;
+  border-radius: 2px;
+}
+.active-term{
+  color: #cc1313;
+}
+.conditional{
+  opacity: 0.5;
+  pointer-events: none; /* Disable user interaction */
+}
+@media(min-width:1406px){
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+@media (min-width:1025px){
+.item-term{
+  min-height: 80px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+}
+
+@media (max-width: 1424px) and (min-width:1000px){
+
+.carousel-item {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+
+}
+.corousel-img {
+  width: 100%;
+  align-items: center;
+}
+.corousel-img img{
+ 
+ object-fit: contain;
+  width: 100%;
+}
+.carousel-defination{
+  width: 100%;
+}
+
+}
+@media (max-width: 1407px){
+  /* Style for the scrollbar track */
+::-webkit-scrollbar {
+  height: 3px; 
+  width: 3px;/* Height of the horizontal scrollbar */
+}
+
+/* Style for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #cc1313; /* Color of the scrollbar */
+  border-radius: 50px; /* Rounded edges for the scrollbar thumb */
+}
+
+/* Optional: Style the scrollbar track (the background area) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light background for contrast */
+  border-radius: 25px; /* Rounded edges for the scrollbar track */
+}
+
+}
+

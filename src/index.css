@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #f5f1ec;
+    font-family:  Helvetica, sans-serif;
+}
+
+::selection{
+    background: rgba(179, 235, 23, 0.548);
+    color: #1f1f1f;
+}
