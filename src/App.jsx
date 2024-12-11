@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import MyFlashCard from './pages/MyFlashCard';
 import FlashcardDetails from './pages/FlashCardDetails';
 import NavLinks from './components/Navlinks/Navlinks';
-import Footer from './components/footer/Footer';
+
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/card/:index" element={<FlashcardDetails/>} />
       </Routes>
       <Outlet/>
-      <Footer/>
+
     </BrowserRouter>
   );
 }
