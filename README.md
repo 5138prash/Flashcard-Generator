@@ -37,11 +37,11 @@ Flashcard Generator includes the following key features:
 ## Tech Stack
 Flashcard Generator is built using modern technologies to ensure high performance and scalability:
 
-- **React + Vite**: For a seamless and reactive user interface [React + Vite](https://vite.dev/).
-- **Tailwind CSS**: Utility-first CSS framework for rapid and modern UI development [Tailwind CSS](https://tailwindcss.com/).
-- **Redux Toolkit**: For efficient and predictable state management [Redux-Toolkit](https://redux-toolkit.js.org/introduction/getting-started).
-- **Formik**: Simplifies form handling and validation [Formik](https://formik.org/docs/overview).
-- **React Icons**: Offers a vast collection of popular icons to enhance the UI [React Icons](https://react-icons.github.io/react-icons/).
+- **[React + Vite](https://vite.dev/)**: For a seamless and reactive user interface .
+- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid and modern UI development .
+- **[Redux-Toolkit](https://redux-toolkit.js.org/introduction/getting-started)**: For efficient and predictable state management.
+- **[Formik](https://formik.org/docs/overview)**: Simplifies form handling and validation .
+- **[React Icons](https://react-icons.github.io/react-icons/)**: Offers a vast collection of popular icons to enhance the UI .
 
 ---
 
