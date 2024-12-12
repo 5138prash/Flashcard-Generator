@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import MyFlashCard from './pages/MyFlashCard';
 import FlashcardDetails from './pages/FlashCardDetails';
 import NavLinks from './components/Navlinks/Navlinks';
+import NotFound from '.pages/NotFound.jsx'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/MyFlashCard" element={<MyFlashCard/>} />
         <Route path="/card/:index" element={<FlashcardDetails/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       <Outlet/>
 
