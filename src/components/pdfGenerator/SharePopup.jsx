@@ -3,10 +3,12 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaWhatsapp,
-  FaTwitter,
   FaEnvelope,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { TiDelete } from "react-icons/ti";
+import { MdOutlineContentCopy } from "react-icons/md";
+
 
 
 // Function to handle sharing to different apps
@@ -64,23 +66,51 @@ const copyToClipboard = (text) => {
 // SharePopup component - Displays a popup for sharing the current URL to different apps
 const SharePopup = ({ onClose }) => {
   return (
-    <div  className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg">
+    <div  className="fixed  inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center">
+      <div className="bg-[#f5f1ec] p-6 rounded-lg  w-[500px] ">
         <h3 className="text-lg font-semibold mb-4">Share</h3>
-        <div className="flex justify-around mb-4">
+        
+        
+        <div className="share-input w-full flex gap-2 items-center justify-around rounded-lg bg-[#fff] shadow-xl">
+        <input
+          type="text"
+          value={window.location.href}
+          readOnly
+          className="w-3/4 p-2 bg-[#fff] rounded "
+        />
+
+        {/* Button to copy the current page URL */}
+        <button
+          className=" hover:text-blue-500  rounded text-2xl"
+          onClick={() => copyToClipboard(window.location.href)} // Copy current URL to clipboard
+        >
+          <MdOutlineContentCopy />
+        </button>
+        {/* Close button to close the popup */}
+        <button
+          className="text-2xl hover:text-[#cc1313]  rounded "
+          onClick={onClose}
+        >
+        <TiDelete/>
+        </button>
+
+        </div>
+
+        {/* Input field displaying the current page URL */}
+        <div className="flex w-full  justify-around  my-5">
           {/* Icons for different social media apps */}
           <FaFacebookF
-            className="cursor-pointer hover:text-blue-600"
+            className="cursor-pointer hover:text-blue-600 hover:shadow-lg hover:shadow-blue-500/30 rounded-full bg-white p-2 text-4xl"
             onClick={() => handleAppShare("fb://", "https://www.facebook.com")}
           />
           <FaLinkedinIn
-            className="cursor-pointer  hover:text-blue-500"
+            className="cursor-pointer  hover:text-blue-500 hover:shadow-lg hover:shadow-blue-500/30 rounded-full bg-white p-2 text-4xl"
             onClick={() =>
               handleAppShare("linkedin://", "https://www.linkedin.com")
             }
           />
           <FaWhatsapp
-            className="cursor-pointer  hover:text-green-500"
+            className="cursor-pointer  hover:text-green-500 hover:shadow-lg hover:shadow-green-500/30 rounded-full bg-white p-2 text-4xl"
             onClick={() =>
               handleAppShare(
                 "whatsapp://send?text=",
@@ -89,7 +119,7 @@ const SharePopup = ({ onClose }) => {
             }
           />
           <FaXTwitter
-            className="cursor-pointer  hover:text-zinc-500"
+            className="cursor-pointer  hover:text-zinc-500 hover:shadow-lg hover:shadow-gray-500/30 rounded-full bg-white p-2 text-4xl"
             onClick={() =>
               handleAppShare(
                 "twitter://post?message=",
@@ -98,33 +128,13 @@ const SharePopup = ({ onClose }) => {
             }
           />
           <FaEnvelope
-            className="cursor-pointer hover:text-[#cc1313]"
+            className="cursor-pointer hover:shadow-lg hover:shadow-red-500/30 hover:text-[#cc1313] rounded-full bg-white p-2 text-4xl"
             onClick={() =>
               handleAppShare("mailto:?body=", "https://mail.google.com")
             }
           />
         </div>
-        {/* Input field displaying the current page URL */}
-        <input
-          type="text"
-          value={window.location.href}
-          readOnly
-          className="w-full p-2 border rounded mb-4"
-        />
-        {/* Button to copy the current page URL */}
-        <button
-          className="w-full bg-blue-500 text-white py-2 rounded"
-          onClick={() => copyToClipboard(window.location.href)} // Copy current URL to clipboard
-        >
-          Copy Link
-        </button>
-        {/* Close button to close the popup */}
-        <button
-          className="w-full bg-[#cc1313] text-white py-2 rounded mt-2"
-          onClick={onClose}
-        >
-          Close
-        </button>
+        
       </div>
     </div>
   );
