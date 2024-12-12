@@ -4,6 +4,7 @@ import { MdKeyboardBackspace } from "react-icons/md"; // Importing backspace ico
 import Carousel from "../components/carousel/Carousel"; // Importing Carousel component for displaying flashcards
 import FlashcardPDFGenerator from "../components/pdfGenerator/pdfGenerator"; // Importing PDF Generator for downloading/printing
 import { useState } from 'react'; // Importing useState to manage local state
+import NotFound from "./NotFound";
 
 // FlashCardDetails component to show the details of a selected flashcard
 export default function FlashCardDetails() {
@@ -70,12 +71,7 @@ export default function FlashCardDetails() {
                 </>
             ) : (
                 // If cardDetail is not found, display an error message and offer to create a new flashcard
-                <div className="flex flex-col gap-5 items-center justify-center min-h-[300px]">
-                    <p className="text-lg">Oops! No card details found.</p>
-                    <button className="border-2 border-red-500 p-1 rounded-lg bg-white">
-                        <Link to={'/'}>Create Your New FlashCard</Link>
-                    </button>
-                </div>
+                <NotFound/>
             )}
         </div>
     );
